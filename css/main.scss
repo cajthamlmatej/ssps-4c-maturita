@@ -3,7 +3,7 @@
 $color-asphalt: #34495e;
 $color-white: white;
 $color-white-darker: darken($color-white, 10);
-$color-black: lighten(rgb(0, 0, 0), 20);
+$color-black: lighten(rgb(0, 0, 0), 30);
 $color-delta: darken($color-white, 4);
 
 * {
@@ -22,10 +22,18 @@ b {
     font-weight: bold;
 }
 
+body {
+    margin-top: 90px;
+}
+
 header {
+    z-index: 999;
     width: 100%;
     background-color: $color-asphalt;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     > .content {
         width: 100%;
@@ -153,6 +161,10 @@ section {
         font-weight: bold;
         color: $color-black;
         text-decoration: none;
+
+        &:hover {
+            color: darken($color-black, 5);
+        }
     }
 
     ul {

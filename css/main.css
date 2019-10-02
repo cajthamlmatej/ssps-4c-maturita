@@ -7,6 +7,7 @@
   vertical-align: baseline;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
   color: #4d4d4d; }
 
 b {
@@ -65,7 +66,8 @@ section {
     width: 100%;
     max-width: 1040px;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    position: relative; }
     section > .content > h2 {
       text-align: center;
       text-transform: uppercase;
@@ -79,6 +81,7 @@ section {
       font-style: italic;
       margin-bottom: 24px; }
   section .row {
+    z-index: 10;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -93,7 +96,7 @@ section {
       section .row > .column.size-3 {
         width: 73%; }
       section .row > .column.size-4 {
-        width: 98%; }
+        width: 100%; }
       section .row > .column > .content {
         margin: 20px; }
   section h3 {
@@ -104,10 +107,10 @@ section {
     margin-bottom: 10px; }
   section a {
     font-weight: bold;
-    color: #4d4d4d;
+    color: gray;
     text-decoration: none; }
     section a:hover {
-      color: #404040; }
+      color: #333333; }
   section ul {
     list-style: none; }
     section ul li {

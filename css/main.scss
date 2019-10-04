@@ -93,7 +93,14 @@ header {
     }
   }
 
+  @include respond-to(handhelds) {
+    .menu {
+      display: none !important;
+    }
+  }
+
   nav {
+
     ul {
       display: flex;
       flex-wrap: wrap;

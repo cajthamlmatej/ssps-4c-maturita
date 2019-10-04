@@ -103,6 +103,8 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
+    section .row.no-background > .column {
+      background-color: transparent !important; }
     section .row > .column {
       margin: 20px 0;
       background-color: rgba(77, 77, 77, 0.08); }

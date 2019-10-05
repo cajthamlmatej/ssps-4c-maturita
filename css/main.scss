@@ -93,13 +93,36 @@ header {
     }
   }
 
-  @include respond-to(handhelds) {
-    .menu {
-      display: none !important;
+  .logo {
+    @include respond-to(handhelds) {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-content: center;
+    }
+
+    .show-nav {
+      display: none;
+      font-size: 2.5em;
+      
+      @include respond-to(handhelds) {
+        display: block !important;
+      }
+
+      i {
+        color: white;
+        transition: all 0.5s ease;
+
+        &:before {
+          transition: all 0.5s ease;
+        }
+      }
     }
   }
 
   nav {
+    @include respond-to(handhelds) {
+      display: none;
+    }
 
     ul {
       display: flex;

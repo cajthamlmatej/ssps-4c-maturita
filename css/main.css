@@ -51,8 +51,22 @@ header {
       header > .content {
         width: 80%; } }
   @media only screen and (max-width: 425px) {
-    header .menu {
-      display: none !important; } }
+    header .logo {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-content: center; } }
+  header .logo .show-nav {
+    display: none;
+    font-size: 2.5em; }
+    @media only screen and (max-width: 425px) {
+      header .logo .show-nav {
+        display: block !important; } }
+    header .logo .show-nav i {
+      color: white;
+      transition: all 0.5s ease; }
+  @media only screen and (max-width: 425px) {
+    header nav {
+      display: none; } }
   header nav ul {
     display: flex;
     flex-wrap: wrap;

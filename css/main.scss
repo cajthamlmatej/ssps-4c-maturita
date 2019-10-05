@@ -46,6 +46,18 @@ b {
   font-weight: bold;
 }
 
+table {
+  width: 100%;
+
+  tr {
+    td {
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
+  }
+}
+
 body {
   margin-top: 90px;
 }
@@ -103,7 +115,7 @@ header {
     .show-nav {
       display: none;
       font-size: 2.5em;
-      
+
       @include respond-to(handhelds) {
         display: block !important;
       }

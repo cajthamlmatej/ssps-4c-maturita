@@ -13,6 +13,11 @@
 b {
   font-weight: bold; }
 
+table {
+  width: 100%; }
+  table tr td:nth-child(2) {
+    text-align: right; }
+
 body {
   margin-top: 90px; }
 
@@ -64,6 +69,8 @@ header {
     header .logo .show-nav i {
       color: white;
       transition: all 0.5s ease; }
+      header .logo .show-nav i:before {
+        transition: all 0.5s ease; }
   @media only screen and (max-width: 425px) {
     header nav {
       display: none; } }
